@@ -3,10 +3,13 @@ package com.rover;
 import java.util.ArrayList;
 
 public class Tokenizer {
-    public ArrayList<Integer> tokenizeStringToIntegerValueOfPlateauBoundaries() {
-        ArrayList<Integer> plateauBoundary = new ArrayList<Integer>();
-        plateauBoundary.add(5);
-        plateauBoundary.add(5);
+    public ArrayList<Integer> tokenizeStringToIntegerValueOfPlateauBoundaries(String input) {
+        ArrayList<Integer> plateauBoundary = new ArrayList<>();
+        String boundary[] = input.split(" ");
+        int boundaryX = Integer.parseInt(boundary[0]);
+        int boundaryY = Integer.parseInt(boundary[1]);
+        plateauBoundary.add(boundaryX);
+        plateauBoundary.add(boundaryY);
         return plateauBoundary;
     }
 }
