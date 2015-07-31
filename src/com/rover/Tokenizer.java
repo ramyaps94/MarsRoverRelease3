@@ -3,7 +3,7 @@ package com.rover;
 import java.util.ArrayList;
 
 public class Tokenizer {
-    public ArrayList<Integer> tokenizeStringToIntegerValueOfPlateauBoundaries(String input) {
+    public ArrayList<Integer> tokenizeStringToIntegerValue(String input) {
         ArrayList<Integer> plateauBoundary = new ArrayList<>();
         String boundary[] = input.split(" ");
         int boundaryX = Integer.parseInt(boundary[0]);
@@ -12,4 +12,5 @@ public class Tokenizer {
         plateauBoundary.add(boundaryY);
         return plateauBoundary;
     }
+
 }
