@@ -32,4 +32,13 @@ public class PlateauTest {
 
         assertEquals(expectedX, plateau.getBottomLeftXCoOrdinate());
     }
+
+    @Test
+    public void shouldKnowTheBottomLeftY() {
+        Plateau plateau = new Plateau(5, 5);
+
+        int expectedY = 0;
+
+        assertEquals(expectedY, plateau.getBottomLeftYCoOrdinate());
+    }
 }

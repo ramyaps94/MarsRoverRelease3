@@ -22,4 +22,8 @@ public class Plateau {
     public int getBottomLeftXCoOrdinate() {
         return bottomLeftXCoOrdinate;
     }
+
+    public int getBottomLeftYCoOrdinate() {
+        return bottomLeftYCoOrdinate;
+    }
 }
