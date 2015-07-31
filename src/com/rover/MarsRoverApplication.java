@@ -11,6 +11,7 @@ public class MarsRoverApplication {
         view.display("Enter the Boundaries of the Plateau");
         String Input = view.acceptInput();
         XYCoOrdinates = tokenizer.tokenizeStringToIntegerValue(Input);
+        Plateau plateau = new Plateau(XYCoOrdinates.get(0), XYCoOrdinates.get(1));
         view.display("Enter the current position of the rover");
         Input = view.acceptInput();
         XYCoOrdinates = tokenizer.tokenizeStringToIntegerValue(Input);
